@@ -1,4 +1,5 @@
 import { Header } from "./Header";
+import { Trendsphere } from "./Trendsphere";
 import { Hero } from "./Hero";
 import { Icons } from "./Icons";
 import { Stats } from "./Stats";
@@ -10,6 +11,7 @@ function LandingPage() {
   return (
     <div className="LandingPage">
       <Header />
+      <Trendsphere />
       <Hero />
       <Icons />
       <Stats />

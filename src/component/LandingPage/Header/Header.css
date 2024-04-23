@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--app-block-padding);
+  margin: 20px 70px;
+}
+.logoimage {
+  display: flex;
+  gap: 15px;
+}
+.home {
+  color: #ff5733;
+  text-decoration: underline;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  background: none;
+  padding: 10px;
+}
+.menu-toggle:hover {
+  background-color: #eee;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list li {
+  margin-left: 80px;
+}
+.nav-list li:hover {
+  background-color: #eee;
+}
+.nav-list li a {
+  text-decoration: none;
+}
+.signup-button {
+  background-color: #ff5733;
+  color: white;
+  padding: 8px 17px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  width: 112px;
+  margin-right: 20px;
+}
+.signup-button:hover {
+  background-color: #eee;
+}
+.trends {
+  color: #ff5733;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #eee;
+    position: fixed;
+    top: 15%;
+    right: 0;
+    width: 100%;
+    gap: 1rem;
+    transition: 1s;
+    height: 100%;
+  }
+  .nav-list.open {
+    display: flex;
+  }
+  .nav-list li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-list li a:hover {
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+  }
+}

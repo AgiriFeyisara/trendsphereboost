@@ -5,9 +5,9 @@ import socialLinks from "../../../assets/LandingPage/icons/socialLinks.svg";
 export const Footer = () => {
   return (
     <section className={style.footer}>
-      <div className={style.img}>
+      <div className={style.imgsphere}>
         <div className={style.image}>
-          <img src={trendSphere} />
+          <img src={trendSphere} cl />
           <h2>
             Trendsphere
             <br /> Boost
@@ -36,14 +36,14 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className={style.subscribeform}>
           <h4>Subscribe</h4>
           <form className={style.updates}>
             <input
               placeholder="Get product updates"
               className={style.inputupdates}
             />
-            <button className={style.btn}>
+            <button className={style.btn4}>
               <img src={arrowIcon} className={style.arrow} />
             </button>
           </form>
@@ -52,7 +52,11 @@ export const Footer = () => {
       {/* hr line */}
       <div className={style.divider}></div>
       <div className={style.links}>
-        <div>© 2024 Trendsphere Boost. All rights reserved</div>
+        <div>
+          <p className={style.reserve}>
+            © 2024 Trendsphere Boost. All rights reserved
+          </p>
+        </div>
         <div>
           <img src={socialLinks} />
         </div>

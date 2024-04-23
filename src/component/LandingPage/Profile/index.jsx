@@ -10,13 +10,13 @@ export const Profile = () => {
         <h1 className={style.trendsphere}>Why Trendsphere Boost?</h1>
         <p className={style.p2}>
           We are so much more than just a social media marketing company.
-          Trendsphere oost is <br /> dedicated to empowering your online
+          Trendsphereboost is <br /> dedicated to empowering your online
           presence for success in the digital sphere
         </p>
       </div>
       <div className={style.socialsection}>
         <div>
-          <h1>PROFILE BRANDING & OPTIMIZATION</h1>
+          <h1 className={style.bold}>PROFILE BRANDING & OPTIMIZATION</h1>
           <p>
             Our expert team handles your brand's social
             <br /> media accounts, creating engaging content,?
@@ -32,11 +32,11 @@ export const Profile = () => {
         </div>
       </div>
       <div className={style.socialsection}>
-        <div>
+        <div className={style.socialImage}>
           <img src={contentImage} />
         </div>
         <div className={style.content}>
-          <h1>CONTENT MARKETING</h1>
+          <h1 className={style.bold}>CONTENT MARKETING</h1>
           <p>
             Our content marketing services focus on <br />
             creating and distributing valuable and <br />
@@ -51,7 +51,7 @@ export const Profile = () => {
       </div>
       <div className={style.socialsection}>
         <div>
-          <h1>PROFILE BRANDING & OPTIMIZATION</h1>
+          <h1 className={style.bold}>PROFILE BRANDING & OPTIMIZATION</h1>
           <p>
             Our expert team handles your brand's social
             <br /> media accounts, creating engaging content,?
